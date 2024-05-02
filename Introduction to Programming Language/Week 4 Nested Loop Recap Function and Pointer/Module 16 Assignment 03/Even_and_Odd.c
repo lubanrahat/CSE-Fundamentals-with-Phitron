@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
+#include <math.h>
+
+
+void odd_even(void) {
+  int n;
+  scanf("%d",&n);
+  int arr[n];
+  for(int i=0;i<n;i++)
+    scanf("%d",&arr[i]);
+  int even=0,odd=0;
+  for(int i=0;i<n;i++) {
+    if(arr[i]%2==0) {
+      even++;
+    }else {
+      odd++;
+    }
+  }
+  printf("%d %d\n",even,odd);
+}
+
+int main() {
+
+  odd_even();
+
+  return 0;
+}
+
