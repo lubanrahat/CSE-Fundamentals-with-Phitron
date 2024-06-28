@@ -33,7 +33,6 @@ int sizeList(Node* head) {
   return count;
 }
 
-
 void insertAtHead(Node* &head,int data) {
   Node* newNode = new Node(data);
   newNode->next = head;
