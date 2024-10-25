@@ -10,6 +10,7 @@ int main() {
     cin>>n;
 
     cout<<n*10<<endl;
+    cout<<"Hello world"<<endl;
 
     return 0;
 }
