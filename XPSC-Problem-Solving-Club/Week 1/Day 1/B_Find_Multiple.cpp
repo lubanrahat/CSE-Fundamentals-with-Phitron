@@ -6,10 +6,13 @@ int main() {
 
     ios::sync_with_stdio(false),cin.tie(nullptr);
 
-    int n;
-    cin>>n;
+    int a,b,c;
+    cin>>a>>b>>c;
 
-    cout<<n*10<<endl;
+    int target = ((a+c-1)/c)*c;
+
+    int ans = (target >= a && target <= b) ? target: -1;
+    cout<<ans<<endl;
 
     return 0;
 }
