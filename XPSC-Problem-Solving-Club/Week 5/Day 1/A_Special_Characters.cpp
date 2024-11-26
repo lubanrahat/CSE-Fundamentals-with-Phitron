@@ -7,24 +7,13 @@ int main() {
 
     ios::sync_with_stdio(false),cin.tie(nullptr),cout.tie(nullptr);
 
-    int t;
-    cin>>t;
-    while(t--) {
-        int a;
-        cin>>a;
-        if(a % 2 != 0) {
-            cout<<"NO\n";
-            return 0;
-        }
-        cout<<"YES\n";
-        for(int i = 0; i < a/2; i++) {
-            if(i % 2 == 0) {
-                cout<<"BB";
-            } else {
-                cout<<"AA";
-            }
-        }
-        cout<<endl;
+    int t; cin >> t;
+    while(t--){
+        long n;cin >> n;
+        if(n % 2){std::cout << "NO" << endl; continue;}
+        cout << "YES" << std::endl;
+        for(long p = 0; 2 * p < n; p++){cout << ((p % 2) ? "AA" : "BB");}
+        cout << std::endl;
     }
 
     return 0;
